@@ -9,7 +9,7 @@ Task 1:
   - how to view the project (open a browser...go to ip and port...)
 Task 2:
 Create DockerHub public repo
-  - Created it on hub.docker.com.
+      - Created it on hub.docker.com.
 - How to authenticate with DockerHub via CLI using Dockhub credentials
   - what credentials would you recommend providing?
 - Configuring GitHub Secrets
