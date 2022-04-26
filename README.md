@@ -13,6 +13,7 @@ Task 2:
   -   Created it on hub.docker.com
 - How to authenticate with DockerHub via CLI using Dockhub credentials
 -   what credentials would you recommend providing?
+  -   User name and Password to dockerhub  
 - Configuring GitHub Secrets
 - what credentials are needed
   -   user name and password to docker hub
