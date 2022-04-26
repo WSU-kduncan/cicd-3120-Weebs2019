@@ -19,5 +19,6 @@ Task 2:
 - set secrets and secret names
 - Behavior of GitHub workflow
   - what does it do and when
+    -   It creates an image on my About me page (the Website.html code)
   - variables to change (repository, etc.)
     -   Username and Password for Docker
