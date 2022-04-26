@@ -16,13 +16,13 @@
 
 - sudo docker build -t __NAME__:__VERSION-#__ -t __NAME__:latest .
 
-- Example of __NAME__: robwebsite 
+- Example of __NAME__: aboutme website
 
 - Example of __VERSION-#__: v0.2.4 (OR) latest
 
 ### Container running:
 
-- To run the container run the following command
+- To run the container, you would need to execute the following command:
 
 - docker run -dit --rm --name __APP-NAME__ -p __HOST-PORT__:__CONTAINER-PORT__ __NAME__:__VERSION-#__
 
@@ -32,7 +32,7 @@
 
 - Example of __CONTAINER-PORT__: 80
 
-- (Remaining examples same as above)
+- (The rest of the examples are identical to what is shown above)
 
 ### Viewing container
 
@@ -48,7 +48,7 @@
 
 - curl __LOCAL-IP__:__HOST-PORT__
 
-- Example of __LOCAL-IP__: 172.30.217.73
+- Example of __LOCAL-IP__: 172.34.108.70
 
 - Example of __HOST-PORT__: (same as previous: it must match)
 
@@ -86,19 +86,19 @@
 
 ### Configuring GitHub Secrets
 
-- Go to github.com repository settings -> Secrets -> Actions
+- you need to first Go to github.com repository settings -> Secrets -> Actions
 
-- Create a repository secret using the "New repository secret" button
+- next, you must create a repository secret using the "New repository secret" button
 
-- Create a secret for both DOCKER_PASSWORD (or token if used) and DOCKER_USERNAME
+- For this project you would then, Create a secret for both DOCKER_PASSWORD (or token if used) and DOCKER_USERNAME
 
-- Set the appropriate corasponding information as the secret body
+- Set the appropriate corresponding information as the secret body
 
 ### Behavior of GitHub workflow
 
 - The workflow for this project builds a new image and pushes it to dockerhub on every time a push is made to main
 
-- Variables include 'secrets.DOCKER_USERNAME' and 'secrets.DOCKER_PASSWORD' github secrets to store username and password information
+- The variable you would need to change include 'secrets.DOCKER_USERNAME' and 'secrets.DOCKER_PASSWORD' github secrets to store username and password information
 
 # Part 3:
 
@@ -108,37 +108,41 @@
 
 - Script performs the following:
 
-- Stops current container
+- The container is first stopped
 
-- Removes stopped container
+- It then removes the stopped container
 
-- Pulls new image from Weebs2019/firstrepo:latest
+- The script then pulls a new image from Weebs2019/firstrepo:latest 
 
-- Runs new container from image
+- Finally it runs new container from image
 
 ### Webhook task definition file
 
-- Webhook json file defines the following:
+- Webhook json file defines the following terms and definitions:
 
 - id: the key to define the trigger
 
-- execute-command: full path to restart script
+- execute-command: full path to the restart script
 
 - command-working-directory: working dir
 
-- response-message: message displayed when quried sucessfully
+- response-message: a message displayed when the script qurried sucessfully
 
 ### Setting up a webhook on the server
 
 - Installed and set up the following:
 
-- sudo apt update
+- docker must be set up first which is done by
 
-- sudo apt install docker.io
+-   sudo apt update
 
-- (Set up and created keypairs to link to GitHub)
+-   sudo apt install docker.io
 
-- git clone git@github.com:WSU-kduncan/cicd-3120-Weebs2019.git
+-   now it is time for github
+
+   -   (Set up and created keypairs to link to GitHub)
+
+   -   git clone git@github.com:WSU-kduncan/cicd-3120-Weebs2019.git
 
 - sudo apt install webhook
 
