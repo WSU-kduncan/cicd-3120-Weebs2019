@@ -7,13 +7,15 @@ Task 1:
   -   
   - how to run the container
   - how to view the project (open a browser...go to ip and port...)
+
 Task 2:
-Create DockerHub public repo
+- Create DockerHub public repo
       - Created it on hub.docker.com.
 - How to authenticate with DockerHub via CLI using Dockhub credentials
   - what credentials would you recommend providing?
 - Configuring GitHub Secrets
   - what credentials are needed
+      - user name and password to docker hub
   - set secrets and secret names
 - Behavior of GitHub workflow
   - what does it do and when
