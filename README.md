@@ -10,9 +10,9 @@ Task 1:
 
 Task 2:
 - Create DockerHub public repo
-      - Created it on hub.docker.com.
+      - Created it on hub.docker.com
 - How to authenticate with DockerHub via CLI using Dockhub credentials
-  - what credentials would you recommend providing?
+      - what credentials would you recommend providing?
 - Configuring GitHub Secrets
   - what credentials are needed
       - user name and password to docker hub
