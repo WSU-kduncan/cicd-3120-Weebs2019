@@ -15,8 +15,9 @@ Task 2:
 -   what credentials would you recommend providing?
 - Configuring GitHub Secrets
 - what credentials are needed
--   user name and password to docker hub
+  -   user name and password to docker hub
 - set secrets and secret names
 - Behavior of GitHub workflow
   - what does it do and when
   - variables to change (repository, etc.)
+    -   Username and Password for Docker
